@@ -7,7 +7,7 @@ networks:
       config:
         - subnet: 172.19.0.0/16
 services:
-   ethereum_1:
+   ethereum:
       build:
         context: ./node
         dockerfile: Dockerfile
