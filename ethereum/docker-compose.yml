@@ -1,0 +1,22 @@
+version: '2.1'
+networks:
+  local_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/16
+services:
+   ethereum_1:
+      build:
+        context: ./node
+        dockerfile: Dockerfile
+      container_name: ethereum_1
+      networks:
+         local_net:
+            ipv4_address: '172.19.1.1'
+      volumes:
+         - ./data/node/1:/ethereum
+      ports:
+         - 22000:22000
+         - 21000:21000
