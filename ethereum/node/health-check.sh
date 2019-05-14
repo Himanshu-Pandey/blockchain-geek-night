@@ -3,7 +3,7 @@ retries=5
 is_running=0
 while (( retries > 0 && is_running == 0 ))
 do
-    if ((supervisorctl -c /etc/supervisord.conf status geth | grep -E RUNNING &> /dev/null)
+    if ((supervisorctl -c /etc/supervisord.conf status geth | grep -E RUNNING &> /dev/null))
     then
         is_running=1
     fi

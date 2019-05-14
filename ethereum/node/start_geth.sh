@@ -6,9 +6,10 @@
     --datadir ${ETHEREUM_DIR} \
     --rpc \
     --mine \
-    --minerthreads 1 \
+    --minerthreads 3 \
     --rpcaddr 0.0.0.0 \
     --rpccorsdomain "*" \
+    --syncmode full \
     --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3 \
     --rpcport 22000 \
     --port 21000 \
