@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  eth_1:
+    build: .
+    container_name: ethereum_1 
+  eth_2:
+    build: .
+    container_name: ethereum_2 
+  eth_3:
+    build: .
+    container_name: ethereum_3 
