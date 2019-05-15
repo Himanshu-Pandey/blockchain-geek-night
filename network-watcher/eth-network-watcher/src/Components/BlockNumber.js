@@ -10,7 +10,7 @@ class BlockNumber extends React.Component {
   }
 
   componentDidMount() {
-    const web3 = new Web3('http://localhost:22000');
+    const web3 = new Web3('http://localhost:22001');
 
     setInterval(function (setState, web3) {
       web3.eth.getBlockNumber()

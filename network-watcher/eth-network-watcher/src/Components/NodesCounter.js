@@ -11,7 +11,7 @@ class BlockNumber extends React.Component {
   }
 
   componentDidMount() {
-    const admin = new Admin('http://localhost:22000');
+    const admin = new Admin('http://localhost:22001');
 
     setInterval(function (setState, admin) {
       admin.getPeers()
