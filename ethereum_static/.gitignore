@@ -1,0 +1,11 @@
+# IntelliJ
+.idea/
+!.idea/checkstyle-idea.xml
+!.idea/vakt-checkstyle.xml
+!.idea/codeStyles/
+*.ipr
+*.iml
+*.iws
+
+# Build
+data
